@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Km to mph</title>
+<link href="img/favicon.ico" rel="icon" sizes="any"/>
+<link href="img/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="img/favicon.png" rel="apple-touch-icon"/>
+<link href="https://kmtomph.online/" rel="canonical"/>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="logo">
+<a href="https://kmtomph.online/">
+<img alt="Logo" src="img/kmtomph.png" width="280"/>
+</a>
+</div>
+<h1>Km to mph</h1>
+<div class="container">
+
+<p>Kilometers per hour (km/h) and miles per hour (mph) are both units of speed. The kilometer per hour is a unit of speed expressing the number of kilometers traveled in one hour. It is commonly used worldwide except in the United States and the United Kingdom, where miles per hour is the standard.</p>
+
+<p>Miles per hour, on the other hand, is an imperial unit of speed expressing the number of statute miles covered in one hour. Despite the UK's official metrication program, miles per hour are still used there for road speed limits and road signs.</p>
+
+<h2>Conversion from km/h to mph</h2>
+
+<p>To convert speed from kilometers per hour to miles per hour, you need to use the formula:</p>
+
+<p>mph = 0.621371 * v</p>
+
+<p>where v is the speed in km/h and 0.621371 is the conversion factor from km/h to mph.</p>
+
+<p>Therefore, to convert 1 km/h to mph, you can multiply 1 by 0.621371 to get approximately 0.621371 mph.</p>
+
+    <h2>Km to mph Converter</h2>
+    <div class="calculator-wrapper">
+        <div class="calculator">
+        <div class="inputGroup">
+        <label for="speedKm">Speed in km/h:</label>
+        <input id="speedKm" min="0" required="" type="number"/>
+        </div>
+        <div class="buttonGroup">
+        <button class="calculator-button" id="calculate">Convert</button>
+        <button class="calculator-button" id="reset">Reset</button>
+        </div>
+        <div class="inputGroup">
+        <label for="result">Result in mph:</label>
+        <input id="result" readonly="" type="text"/>
+        </div>
+        <p id="error-message" style="display: none;">Invalid input. Please enter a positive number.</p>
+        </div>
+        </div>
+        
+        <script>
+            const speedKmInput = document.getElementById('speedKm');
+            const resultInput = document.getElementById('result');
+            const convertButton = document.getElementById('calculate');
+            const resetButton = document.getElementById('reset');
+            const errorMessage = document.getElementById('error-message');
+            
+            convertButton.addEventListener('click', function() {
+                const speedKm = parseFloat(speedKmInput.value);
+                if (isNaN(speedKm) || speedKm < 0) {
+                    errorMessage.style.display = 'block';
+                    resultInput.value = '';
+                } else {
+                    errorMessage.style.display = 'none';
+                    resultInput.value = (speedKm * 0.621371).toFixed(2) + ' mph';
+                }
+            });
+            
+            resetButton.addEventListener('click', function() {
+                speedKmInput.value = '';
+                resultInput.value = '';
+                errorMessage.style.display = 'none';
+            });
+        </script>
+                
+    <h2>More Conversions</h2>
+    <ul>
+        <li><a href="50kmtomph.html">50 km/h to mph</a></li>
+        <li><a href="100kmtomph.html">100 km/h to mph</a></li>
+        <li><a href="150kmtomph.html">150 km/h to mph</a></li>
+        <li><a href="200kmtomph.html">200 km/h to mph</a></li>
+        <li><a href="250kmtomph.html">250 km/h to mph</a></li>
+        <li><a href="300kmtomph.html">300 km/h to mph</a></li>
+        <li><a href="350kmtomph.html">350 km/h to mph</a></li>
+        <li><a href="400kmtomph.html">400 km/h to mph</a></li>
+        <li><a href="450kmtomph.html">450 km/h to mph</a></li>
+    </ul>
+    
+</div>
+</div>
+<footer>
+<div class="footer-container">
+<div class="copyright">
+            © Km to mph
+        </div>
+<nav>
+<ul>
+<li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+<li><a href="Help.html">Help</a></li>
+<li><a href="contact-us.html">Contact Us</a></li>
+</ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

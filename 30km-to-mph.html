@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>30 km to mph</title>
+    <link rel="icon" href="img/favicon.ico" sizes="any">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link href="https://kmtomph.online/30km-to-mph.html" rel="canonical"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="logo">
+<a href="https://kmtomph.online/">
+<img alt="Logo" src="img/kmtomph.png" width="280"/>
+</a>
+</div>
+    
+  <h1>30 km to mph</h1>
+  <div class="container">
+    <p>To convert 30 kilometers per hour to miles per hour, Multiply 30 km/h by 0.621371. 30 km/h times 0.621371 gives you 18.64 mph. Therefore, a speed of 30 km/h is equivalent to 18.64 mph.</p>
+    <h2>Formula for 30 km/h to mph</h2>
+    <p>Given a speed of 30 km/h, the conversion to miles per hour (mph) can be expressed as:</p>
+    <p>v = 0.621371 * u</p>
+    <p>Where:</p>
+    <ul>
+        <li>v is the speed in mph,</li>
+        <li>u is the speed in km/h.</li>
+    </ul>
+    <p>Substituting the given speed into the formula:</p>
+    <p>v = 0.621371 * 30 km/h</p>
+    <p>Therefore,</p>
+    <p>v = 18.64 mph</p>
+    <h2>km/h to mph Converter</h2>
+    <div class="calculator-wrapper">
+        <div class="calculator">
+            <div class="inputGroup">
+                <label for="speed">Kilometers per hour (km/h):</label>
+                <input type="number" id="speed" min="0" required>
+            </div>
+            <div class="buttonGroup">
+                <button class="calculator-button" id="calculate">Calculate</button>
+                <button class="calculator-button" id="reset">Reset</button>
+            </div>
+            <div class="inputGroup">
+                <label for="result">Result (mph):</label>
+                <input type="text" id="result" readonly>
+            </div>
+            <p id="error-message" style="display: none;">Invalid input. Please enter a positive number.</p>
+        </div>
+    </div>
+    <script>
+        const speedInput = document.getElementById('speed');
+        const resultInput = document.getElementById('result');
+        const calculateButton = document.getElementById('calculate');
+        const resetButton = document.getElementById('reset');
+        const errorMessage = document.getElementById('error-message');
+        calculateButton.addEventListener('click', function() {
+          const speed = parseFloat(speedInput.value);
+          if (isNaN(speed) || speed < 0) {
+            errorMessage.style.display = 'block';
+            resultInput.value = '';
+          } else {
+            errorMessage.style.display = 'none';
+            resultInput.value = (0.621371 * speed).toFixed(2) + ' mph';
+          }
+        });
+        resetButton.addEventListener('click', function() {
+          speedInput.value = '';
+          resultInput.value = '';
+          errorMessage.style.display = 'none';
+        });
+    </script>
+
+    <h2>FAQs</h2>
+    <h3>How fast is 30 km/h in mph?</h3>
+    <p>A speed of 30 km/h is equivalent to a speed of approximately 18.64 mph.</p>
+    <h3>How do you convert 30 km/h to mph?</h3>
+    <p>To convert a speed from kilometers per hour (km/h) to miles per hour (mph), you need to use the conversion factor 0.621371. In this case, you would multiply 30 km/h by 0.621371 to get the equivalent speed in mph. So, 30 km/h is approximately 18.64 mph.</p>
+    <h2>Other conversions</h2>
+    <table class="km-mph-table"><tr><th>Km/h</th><th>mph</th></tr><tr><td>30.1</td><td>18.7</td></tr><tr><td>30.2</td><td>18.77</td></tr><tr><td>30.3</td><td>18.83</td></tr><tr><td>30.4</td><td>18.89</td></tr><tr><td>30.5</td><td>18.95</td></tr><tr><td>30.6</td><td>19.01</td></tr><tr><td>30.7</td><td>19.08</td></tr><tr><td>30.8</td><td>19.14</td></tr><tr><td>30.9</td><td>19.2</td></tr></table>
+    <div class="related">
+    <h2>Related Articles</h2>
+    
+    <div class="article-preview">
+        <a href="31km-to-mph.html">
+          <h3>31 km to mph</h3>
+        </a>
+        <p>This article explains how to convert a speed of 31 km/h to miles per hour.</p>
+    </div>
+
+    <div class="article-preview">
+        <a href="32km-to-mph.html">
+          <h3>32 km to mph</h3>
+        </a>
+        <p>This article explains how to convert a speed of 32 km/h to miles per hour.</p>
+    </div>
+
+    <div class="article-preview">
+        <a href="33km-to-mph.html">
+          <h3>33 km to mph</h3>
+        </a>
+        <p>This article explains how to convert a speed of 33 km/h to miles per hour.</p>
+    </div>
+
+    <div class="article-preview">
+        <a href="34km-to-mph.html">
+          <h3>34 km to mph</h3>
+        </a>
+        <p>This article explains how to convert a speed of 34 km/h to miles per hour.</p>
+    </div>
+
+  </div>
+  </div>
+<footer>
+    <div class="footer">
+        <div class="copyright">
+            &copy; km/h to mph
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+                <li><a href="Help.html">Help</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+  </footer>
+  
+</body>
+</html>

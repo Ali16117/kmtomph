@@ -1,0 +1,232 @@
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show {
+    display: block;
+}
+
+.fadein {
+    transition: opacity 2s;
+    opacity: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #f2f2f2;  
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+footer div {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+footer nav {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #000; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #888; 
+}
+
+.current-page {
+    font-weight: bold; 
+}
+
+.calculator-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 20px auto;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.inputGroup label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.inputGroup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.calculator-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.2s;
+}
+
+.calculator-button:hover {
+    background-color: #0056b3;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#error-message {
+    color: red;
+    display: none;
+}
+
+#outputMph {
+    color: green;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 2px solid green;
+    box-shadow: 0px 0px 10px green;
+}
+
+.container {
+    width: 90%; /* adjust this as needed */
+    max-width: 800px; /* adjust this as needed */
+    margin: 0 auto; /* centers the container */
+    padding: 20px; /* optional padding */
+}
+
+h1 {
+    text-align: center; /* centers the text of all h1 elements */
+}
+
+.related {
+    background-color: #f2f2f2;  
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.breadcrumb-item {
+    margin-right: 10px;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+}
+
+.breadcrumb-item::after {
+    content: ">";
+    margin-left: 10px;
+}
+
+.breadcrumb-item:last-child::after {
+    content: "";
+}
+
+.breadcrumb-item.active a {
+    color: gray;
+    pointer-events: none;
+    cursor: default;
+}
+
+.current {
+    font-weight: bold;
+}
+
+table.km-mph-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.km-mph-table th,
+table.km-mph-table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+table.km-mph-table thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+table.km-mph-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
